@@ -122,7 +122,7 @@ class Window(QWidget):
             self.get_time()
 
             self.out = cv2.VideoWriter(
-                f'{self.dt}.mp4', self.fourcc, 20.0, (self.img_width, self.img_height))
+                f'{self.dt}.avi', self.fourcc, 20.0, (self.img_width, self.img_height))
 
     def get_time(self):
         now = datetime.datetime.now()
